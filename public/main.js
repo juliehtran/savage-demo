@@ -5,7 +5,7 @@ const thumbDown = document.getElementsByClassName(`js-thumbs-down`);
 Array.from(thumbDown).forEach((element) => {
   element.addEventListener(`click`, onThumbDown);
 });
-
+// subtraction on thumbDown
 function onThumbDown(clickEvent) {
   changeThumbValue(clickEvent, -1)
 }
@@ -17,14 +17,14 @@ const thumbUp = document.getElementsByClassName(`js-thumbs-up`);
 Array.from(thumbUp).forEach((element) => {
   element.addEventListener(`click`, onThumbUp);
 });
-
+// addition on thumbUp
 function onThumbUp(clickEvent) {
   changeThumbValue(clickEvent, 1)
 }
 
 // ------------------------------------------------------------------------------------------------------------
 const trash = document.getElementsByClassName(`js-trash`);
-
+// makes all trash cans clickable
 Array.from(trash).forEach((element) => {
   element.addEventListener(`click`, onTrashClicked)
 });
